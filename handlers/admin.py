@@ -48,7 +48,7 @@ async def delete_student(message: types.Message):
                                                             callback_data=f"del {ret[0]}")))
 
 def register_hadlers_admin(dp:Dispatcher):
-    dp.register_message_handler(student_task, commands=["Создать_директорию"])
+    dp.register_message_handler(student_task, commands=["Создать"])
     dp.register_message_handler(delete_student, commands=["Удалить"])
     dp.register_callback_query_handler(del_callback_run, lambda x: x.data and x.data.startswith("del "))
     dp.register_message_handler(load_student, state=FSMAdmin.student)
