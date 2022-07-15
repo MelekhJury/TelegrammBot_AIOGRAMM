@@ -1,7 +1,7 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 
 
-button_load = KeyboardButton("/Создать_директорию")
+button_load = KeyboardButton("/Создать")
 button_delete = KeyboardButton("/Удалить")
 
 
